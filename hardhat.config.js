@@ -13,7 +13,7 @@ module.exports = {
     hardhat: {
       forking: {
         // @ts-ignore
-        url: process.env.SEPOLIARPC,
+        url: "https://ethereum-sepolia-rpc.publicnode.com",
       },
     },
   },

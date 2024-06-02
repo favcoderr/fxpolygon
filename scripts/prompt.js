@@ -2,7 +2,7 @@ const hre = require("hardhat");
 const contractJSON = require("../artifacts/contracts/GidToken.sol/GidToken.json");
 require("dotenv").config();
 
-const contractAddress = "0xcontract";
+const contractAddress = "0x3bc6F757E29Fc12791fC3F57971bf9964A912dBF";
 const contractABI = contractJSON.abi;
 
 async function main() {

@@ -5,18 +5,9 @@ require("dotenv").config();
 module.exports = {
   solidity: "0.8.20",
   networks: {
-    goerli: {
-      url: process.env.GOERLIRPC,
+    sepolia: {
+      url: "https://ethereum-sepolia-rpc.publicnode.com",
       // @ts-ignore
-      accounts: [process.env.PRIVATEKEY],
-    },
-    goerli: {
-      url: process.env.SEPOLIARPC,
-      // @ts-ignore
-      accounts: [process.env.PRIVATEKEY],
-    },
-    mumbai: {
-      url: process.env.MUMBAIRPC,
       accounts: [process.env.PRIVATEKEY],
     },
     hardhat: {

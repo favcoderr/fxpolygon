@@ -10,7 +10,7 @@ async function main() {
   const totalNFTs = await contract.totalSupply();
 
   for (let i = 0; i < totalNFTs; i++) {
-    console.log(`Prompt ${i + 1}: ${await contract.prompt(i)}`);
+    console.log(`prompts ${i + 1}: ${await contract.prompts(i)}`);
   }
 }
 

@@ -43,13 +43,16 @@ This repository provides a practical guide for creating NFTs based on the ERC721
     - Allow 20-30 minutes for tokens to appear in your Polygon account after depositing.
     - Learn more about FxPortal [here](https://wiki.polygon.technology/docs/pos/design/bridge/l1-l2-communication/fx-portal/#how-does-it-work).
 
+5. **Verify Balance:**
+  - Verify the successful transfer of NFTs by employing npx hardhat run scripts/getBalance.js --network sepolia to check the number of NFTs associated with an address on Polygon.
+
 ---
 
 ## Accessing Image Descriptions
 
 To explore textual descriptions linked with NFT images, run:
 ```sh
-npx hardhat run scripts/prompt.js --network sepolia
+npx hardhat run scripts/prompts.js --network sepolia
 ```
 
 ---

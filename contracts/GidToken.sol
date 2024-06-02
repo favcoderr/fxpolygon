@@ -18,16 +18,16 @@ contract GidToken is ERC721A, Ownable {
     mapping(uint256 => string) private _tokenURIs;
 
     function _baseURI() internal pure override returns (string memory) {
-        return "QmZMcWPjGipqd4ij4LdRWZPmbGKYvW4vrAz4K6QQN9Ry45";
+        return "QmTXWymK7JNpASEhDibGsJULRQJkcY1MA6vk2fbNmp9nQS";
     }
 
     function mint(address reciever, uint256 quantity) external onlyOwner {
-        require(reciever != address(0), "Invalid Address");
-        require(totalSupply() < limit, "Maximum NFT Minted");
+        require(reciever != address(0), "Invalid address");
+        require(totalSupply() < limit, "NFTs minted exceeds maximum");
         _safeMint(reciever, quantity);
     }
 
-    function prompt(uint256 tokenId) public view returns (string memory) {
+    function prompts(uint256 tokenId) public view returns (string memory) {
         return descriptions[tokenId];
     }
 }

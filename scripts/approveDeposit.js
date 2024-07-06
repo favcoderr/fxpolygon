@@ -4,7 +4,7 @@ const contractJSON = require("../artifacts/contracts/GidToken.sol/GidToken.json"
 
 const contractAddress = "0x3bc6F757E29Fc12791fC3F57971bf9964A912dBF";
 const contractABI = contractJSON.abi;
-const fxERC721ContractAddress = "0xF9bc4a80464E48369303196645e876c8C7D972de";
+const fxERC721ContractAddress = "0x34F5A25B627f50Bb3f5cAb72807c4D4F405a9232";
 const walletAddress = "0x5bB94AF4324e4A0232cD6475716A34bf198F5F80";
 
 async function main() {
